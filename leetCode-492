@@ -1,0 +1,9 @@
+class Solution {
+    public int[] constructRectangle(int area) {
+        int w=(int)Math.sqrt(area);//Root of 4 is 2
+        while(area%w!=0){//4%2==0
+            w--;
+        }
+        return new int[]{area/w,w};
+    }
+}
